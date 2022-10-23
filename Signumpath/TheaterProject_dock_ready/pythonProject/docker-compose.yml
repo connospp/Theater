@@ -1,0 +1,16 @@
+version: "2.2"
+services:
+  theater:
+    env_file:
+      - .flaskenv
+    build:
+      context: /home/constantinosp/Desktop/Theater_Project/TheaterProject_dock_ready/pythonProject
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    image: home/theater:latest
+    volumes:
+      - /home/constantinosp/Desktop/Theater_Project/TheaterProject/pythonProject:/home/theater
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+

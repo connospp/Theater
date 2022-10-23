@@ -1,0 +1,2 @@
+To run unittest tests. Make sure API is running on localhost on port 5000
+Otherwise change URL in each py file in folder
